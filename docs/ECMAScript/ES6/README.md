@@ -11,7 +11,7 @@ let imgs = [].slice.call(document.querySelectorAll('img')) // NodeList
 
 
 
-### 什么是伪数组：1、这个对象是按索引方式存储数据的。2、它具备length属性
+什么是伪数组：1、这个对象是按索引方式存储数据的。2、它具备length属性
 
 ```javascript
 //Array.from 
