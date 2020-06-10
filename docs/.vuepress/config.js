@@ -4,11 +4,11 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 14:33:38
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-05-20 17:06:47
+ * @LastEditTime: 2020-06-10 16:27:05
  */
 module.exports = {
   title: 'hello',
-  description: '小羽羽羽羽',
+  description: '汝之为何 吾之奈何',
   head: [
     ['link', {
       rel: 'icon',
@@ -21,24 +21,41 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
       {
         text: 'ECMAScript',
         items: [
           { text: 'ES6', link: '/ECMAScript/ES6/' },
-          { text: 'ES7', link: '/ECMAScript/ES7/' }
+          { text: 'ES7-10', link: '/ECMAScript/ES7-10/' }
         ]
       },
-      { text: 'External', link: 'https://www.baidu.com' },
+      {
+        text: 'Guide',
+        items: [
+          { text: 'Git', link: '/Guide/Git/' },
+          { text: 'JS随笔', link: '/Guide/JSessay/' }
+        ]
+      },
+      { text: ' Contact',
+      items: [
+        { text: 'GitHub', link: 'https://github.com/dingxingxing' },
+        { text: '博客园', link: 'https://www.cnblogs.com/dingxingxing' }
+      ]
+        },
     ],
-    sidebarDepth: 3,
+    // sidebarDepth: 3,
     sidebar: [
       {
-        title: 'ECMAScript',
-        collapsable: false,
-        children: ['/ECMAScript/ES6/']
-      }
+        title: 'ECMAScript ',
+        collapsable: true,
+        children: ['/ECMAScript/ES6/', '/ECMAScript/ES7-10/']
+      },
+      {
+        title: 'Guide ',
+        collapsable: true,
+        children: ['/Guide/Git/', '/Guide/JSessay/']
+      },
     ]
   }
 }
+
 
