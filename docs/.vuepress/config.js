@@ -4,7 +4,7 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 14:33:38
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-06-10 16:27:05
+ * @LastEditTime: 2020-06-11 08:50:02
  */
 module.exports = {
   title: 'hello',
@@ -13,7 +13,14 @@ module.exports = {
     ['link', {
       rel: 'icon',
       href: `/favicon.ico`
-    }]
+    }],
+    [
+      "script", {
+          "language": "javascript",
+          "type": "text/javascript",
+          "src": "/js/mouseClick.js"
+      }
+  ]
   ],
   dest: './docs/.vuepress/dist',
   ga: '',
