@@ -4,11 +4,11 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 14:33:38
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-06-11 08:50:02
+ * @LastEditTime: 2020-06-17 09:13:55
  */
 module.exports = {
   title: 'hello',
-  description: '汝之为何 吾之奈何',
+  description: '小羽的博客',
   head: [
     ['link', {
       rel: 'icon',
