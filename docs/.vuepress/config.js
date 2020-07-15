@@ -4,11 +4,11 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 14:33:38
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-07-15 08:59:30
+ * @LastEditTime: 2020-07-15 09:16:32
  */
 module.exports = {
   title: '小羽',
-  description: '小羽的博客',
+  description: '每割一次都要从割韭菜的人身上换回一点资源',
   head: [
     ['link', {
       rel: 'icon',

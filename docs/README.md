@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /bg.png
-actionText: 开始交流 →
+actionText: 开始学习 →
 actionLink: /Guide/Vue/
 features:
   - title: 简洁至上
