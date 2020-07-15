@@ -4,10 +4,10 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 14:33:38
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-06-17 09:13:55
+ * @LastEditTime: 2020-07-15 08:59:30
  */
 module.exports = {
-  title: 'hello',
+  title: '小羽',
   description: '小羽的博客',
   head: [
     ['link', {
@@ -32,14 +32,16 @@ module.exports = {
         text: 'ECMAScript',
         items: [
           { text: 'ES6', link: '/ECMAScript/ES6/' },
-          { text: 'ES7-10', link: '/ECMAScript/ES7-10/' }
+          { text: 'ES7-10', link: '/ECMAScript/ES7-10/' },
+          { text: 'JS随笔', link: '/ECMAScript/JSessay/' }
         ]
       },
       {
         text: 'Guide',
         items: [
+          { text: 'Vue', link: '/Guide/Vue/' },
           { text: 'Git', link: '/Guide/Git/' },
-          { text: 'JS随笔', link: '/Guide/JSessay/' }
+          { text: 'Webpack', link: '/Guide/Webpack/' },
         ]
       },
       { text: ' Contact',
@@ -54,12 +56,12 @@ module.exports = {
       {
         title: 'ECMAScript ',
         collapsable: true,
-        children: ['/ECMAScript/ES6/', '/ECMAScript/ES7-10/']
+        children: ['/ECMAScript/ES6/', '/ECMAScript/ES7-10/', '/ECMAScript/JSessay/']
       },
       {
         title: 'Guide ',
         collapsable: true,
-        children: ['/Guide/Git/', '/Guide/JSessay/']
+        children: ['/Guide/Git/','/Guide/Webpack/', '/Guide/Vue/']
       },
     ]
   }
