@@ -2,7 +2,7 @@
 home: true
 heroImage: /bg.jpg
 actionText: 开始学习 →
-actionLink: /Guide/Vue/
+actionLink: /Guide/Vue/Vue_mvvm/
 features:
   - title: 简洁至上
     details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
