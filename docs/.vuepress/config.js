@@ -4,7 +4,7 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 14:33:38
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-07-27 18:40:37
+ * @LastEditTime: 2020-07-27 19:16:05
  */
 module.exports = {
   title: '小羽',
@@ -16,11 +16,11 @@ module.exports = {
     }],
     [
       "script", {
-          "language": "javascript",
-          "type": "text/javascript",
-          "src": "/js/mouseClick.js"
+        "language": "javascript",
+        "type": "text/javascript",
+        "src": "/js/mouseClick.js"
       }
-  ]
+    ]
   ],
   dest: './docs/.vuepress/dist',
   ga: '',
@@ -39,18 +39,24 @@ module.exports = {
       {
         text: 'Guide',
         items: [
-          { text: 'Vue', link: '/Guide/Vue/' },
-          { text: 'Vuex', link: '/Guide/Vuex/' },
+          {
+            text: 'Vue', link: '/Guide/Vue/Vue_mvvm/' 
+            // items: [
+            //   { text: 'Vue_mvvm', link: '/Guide/Vue/Vue_mvvm/' },
+            //   { text: 'Vuex', link: '/Guide/Vue/Vuex/' },
+            // ]
+          },
           { text: 'Git', link: '/Guide/Git/' },
           { text: 'Webpack', link: '/Guide/Webpack/' },
         ]
       },
-      { text: ' Contact',
-      items: [
-        { text: 'GitHub', link: 'https://github.com/dingxingxing' },
-        { text: '博客园', link: 'https://www.cnblogs.com/dingxingxing' }
-      ]
-        },
+      {
+        text: ' Contact',
+        items: [
+          { text: 'GitHub', link: 'https://github.com/dingxingxing' },
+          { text: '博客园', link: 'https://www.cnblogs.com/dingxingxing' }
+        ]
+      },
     ],
     // sidebarDepth: 3,
     sidebar: [
@@ -62,7 +68,10 @@ module.exports = {
       {
         title: 'Guide ',
         collapsable: true,
-        children: ['/Guide/Git/','/Guide/Webpack/', '/Guide/Vue/', '/Guide/Vuex/']
+        children: ['/Guide/Git/', '/Guide/Webpack/', {
+          title: 'Vue',
+          children: ['/Guide/Vue/Vue_mvvm/', '/Guide/Vue/Vuex/']
+        }]
       },
     ]
   }
