@@ -4,7 +4,7 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 14:33:38
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-07-15 09:16:32
+ * @LastEditTime: 2020-07-27 18:40:37
  */
 module.exports = {
   title: '小羽',
@@ -40,6 +40,7 @@ module.exports = {
         text: 'Guide',
         items: [
           { text: 'Vue', link: '/Guide/Vue/' },
+          { text: 'Vuex', link: '/Guide/Vuex/' },
           { text: 'Git', link: '/Guide/Git/' },
           { text: 'Webpack', link: '/Guide/Webpack/' },
         ]
@@ -61,7 +62,7 @@ module.exports = {
       {
         title: 'Guide ',
         collapsable: true,
-        children: ['/Guide/Git/','/Guide/Webpack/', '/Guide/Vue/']
+        children: ['/Guide/Git/','/Guide/Webpack/', '/Guide/Vue/', '/Guide/Vuex/']
       },
     ]
   }
