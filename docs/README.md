@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /bg.png
+heroImage: /bg.jpg
 actionText: 开始学习 →
 actionLink: /Guide/Vue/
 features:

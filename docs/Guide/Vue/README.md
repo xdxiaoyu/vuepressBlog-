@@ -100,7 +100,7 @@ MVue.js
 ```javascript
 // 先创建一个MVue类,它是一个入口
 Class MVue {
-    construction(options) {
+    constructor(options) {
         this.$el = options.el
         this.$data = options.data
         this.$options = options
