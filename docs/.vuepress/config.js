@@ -1,11 +1,3 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: dxiaoxing
- * @Date: 2020-04-30 14:33:38
- * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-07-27 19:16:05
- */
 module.exports = {
   title: '小羽',
   description: '每割一次都要从割韭菜的人身上换回一点资源',
@@ -40,7 +32,7 @@ module.exports = {
         text: 'Guide',
         items: [
           {
-            text: 'Vue', link: '/Guide/Vue/Vue_mvvm/' 
+            text: 'Vue', link: '/Guide/Vue/Vue_mvvm/'
             // items: [
             //   { text: 'Vue_mvvm', link: '/Guide/Vue/Vue_mvvm/' },
             //   { text: 'Vuex', link: '/Guide/Vue/Vuex/' },
@@ -58,7 +50,7 @@ module.exports = {
         ]
       },
     ],
-    // sidebarDepth: 3,
+    sidebarDepth: 3,
     sidebar: [
       {
         title: 'ECMAScript ',
@@ -70,7 +62,7 @@ module.exports = {
         collapsable: true,
         children: ['/Guide/Git/', '/Guide/Webpack/', {
           title: 'Vue',
-          children: ['/Guide/Vue/Vue_mvvm/', '/Guide/Vue/Vuex/']
+          children: ['/Guide/Vue/Vue_mvvm/', '/Guide/Vue/Vuex/', '/Guide/Vue/Vue_base/']
         }]
       },
     ]

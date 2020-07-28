@@ -3,7 +3,6 @@ function getRandom(max, min) {
 }
 setTimeout(() => {
   var body = document.getElementsByTagName("body")[0]
-  console.log(body);
   body.addEventListener('click', function (e) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", "https://v2.jinrishici.com/one.json?client=browser-sdk/1.2&X-User-Token=A%2Fc%2BrCSZWb3InsnnNznW7HR1fOOlonLa", true);
@@ -25,10 +24,10 @@ setTimeout(() => {
         $span.style.fontSize = `18px`
         $span.style.color = `rgb(${getRandom(255, 0)},${getRandom(255, 0)},${getRandom(255, 0)})`,
           body.append($span)
-        $span.style.animation = `myfirst 1.5s`
+        $span.style.animation = `myfirst linear 1.5s`
         setTimeout(() => {
           body.removeChild($span);
-        }, 1500)
+        }, 1300)
       }
     };
   })

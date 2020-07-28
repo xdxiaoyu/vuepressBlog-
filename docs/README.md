@@ -14,9 +14,6 @@ footer: MIT Licensed | Copyright © 2020 xiaoyu
 ---
 
 
-  <!-- <script src="./vuepress/public/js/mouseClick.js">
-  </script> -->
-
 <style>
 .home img:hover {
    transform: scale(1.15)!important;
@@ -29,6 +26,6 @@ footer: MIT Licensed | Copyright © 2020 xiaoyu
 @keyframes myfirst
 {
 from {opacity: 1;}
-to {opacity: 0.5;top: 350px}
+to {opacity: 0.1;transform: translateY(-110px);}
 }
 </style>
