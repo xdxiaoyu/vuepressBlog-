@@ -40,6 +40,7 @@ module.exports = {
           },
           { text: 'Git', link: '/Guide/Git/' },
           { text: 'Webpack', link: '/Guide/Webpack/' },
+          { text: 'Axios', link: '/Guide/Axios/' },
         ]
       },
       {
@@ -63,7 +64,7 @@ module.exports = {
         children: ['/Guide/Git/', '/Guide/Webpack/', {
           title: 'Vue',
           children: ['/Guide/Vue/Vue_mvvm/', '/Guide/Vue/Vuex/', '/Guide/Vue/Vue_base/']
-        }]
+        }, '/Guide/Axios/']
       },
     ]
   }
