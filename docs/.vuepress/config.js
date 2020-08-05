@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: dxiaoxing
+ * @Date: 2020-04-30 16:36:00
+ * @LastEditors: dxiaoxing
+ * @LastEditTime: 2020-08-05 18:20:27
+ */
 module.exports = {
   title: '小羽',
   description: '每割一次都要从割韭菜的人身上换回一点资源',
@@ -38,9 +46,9 @@ module.exports = {
             //   { text: 'Vuex', link: '/Guide/Vue/Vuex/' },
             // ]
           },
+          { text: 'Axios', link: '/Guide/Axios/' },
           { text: 'Git', link: '/Guide/Git/' },
           { text: 'Webpack', link: '/Guide/Webpack/' },
-          { text: 'Axios', link: '/Guide/Axios/' },
         ]
       },
       {
