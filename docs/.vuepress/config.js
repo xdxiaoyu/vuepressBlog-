@@ -4,7 +4,7 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 16:36:00
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-08-05 18:20:27
+ * @LastEditTime: 2020-08-06 17:54:46
  */
 module.exports = {
   title: '小羽',
@@ -59,7 +59,7 @@ module.exports = {
         ]
       },
     ],
-    sidebarDepth: 3,
+    sidebarDepth: 5,
     sidebar: [
       {
         title: 'ECMAScript ',
@@ -69,10 +69,11 @@ module.exports = {
       {
         title: 'Guide ',
         collapsable: true,
-        children: ['/Guide/Git/', '/Guide/Webpack/', {
+        children: [{
           title: 'Vue',
           children: ['/Guide/Vue/Vue_mvvm/', '/Guide/Vue/Vuex/', '/Guide/Vue/Vue_base/']
-        }, '/Guide/Axios/']
+        },
+          '/Guide/Axios/', '/Guide/Git/', '/Guide/Webpack/']
       },
     ]
   }
