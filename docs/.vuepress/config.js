@@ -4,7 +4,7 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 16:36:00
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-08-06 17:54:46
+ * @LastEditTime: 2020-08-19 17:01:02
  */
 module.exports = {
   title: '小羽',
@@ -29,11 +29,11 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       {
-        text: 'ECMAScript',
+        text: 'Language',
         items: [
-          { text: 'ES6', link: '/ECMAScript/ES6/' },
-          { text: 'ES7-10', link: '/ECMAScript/ES7-10/' },
-          { text: 'JS随笔', link: '/ECMAScript/JSessay/' }
+          { text: 'ES6', link: '/Language/ES6/' },
+          { text: 'ES7-10', link: '/Language/ES7-10/' },
+          { text: 'Node', link: '/Language/Node/' }
         ]
       },
       {
@@ -62,9 +62,9 @@ module.exports = {
     sidebarDepth: 5,
     sidebar: [
       {
-        title: 'ECMAScript ',
+        title: 'Language ',
         collapsable: true,
-        children: ['/ECMAScript/ES6/', '/ECMAScript/ES7-10/', '/ECMAScript/JSessay/']
+        children: ['/Language/ES6/', '/Language/ES7-10/', '/Language/Node/']
       },
       {
         title: 'Guide ',
