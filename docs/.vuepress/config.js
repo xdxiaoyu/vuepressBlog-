@@ -4,7 +4,7 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 16:36:00
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-08-19 17:01:02
+ * @LastEditTime: 2020-08-20 17:34:25
  */
 module.exports = {
   title: '小羽',
@@ -33,7 +33,7 @@ module.exports = {
         items: [
           { text: 'ES6', link: '/Language/ES6/' },
           { text: 'ES7-10', link: '/Language/ES7-10/' },
-          { text: 'Node', link: '/Language/Node/' }
+          { text: 'Node', link: '/Language/Node/Node/' }
         ]
       },
       {
@@ -47,6 +47,7 @@ module.exports = {
             // ]
           },
           { text: 'Axios', link: '/Guide/Axios/' },
+          { text: 'SSO', link: '/Guide/SSO/' },
           { text: 'Git', link: '/Guide/Git/' },
           { text: 'Webpack', link: '/Guide/Webpack/' },
         ]
@@ -64,7 +65,10 @@ module.exports = {
       {
         title: 'Language ',
         collapsable: true,
-        children: ['/Language/ES6/', '/Language/ES7-10/', '/Language/Node/']
+        children: ['/Language/ES6/', '/Language/ES7-10/', {
+          title: 'Node',
+          children: ['/Language/Node/Node/', '/Language/Node/MongoDB/']
+        }]
       },
       {
         title: 'Guide ',
@@ -73,7 +77,7 @@ module.exports = {
           title: 'Vue',
           children: ['/Guide/Vue/Vue_mvvm/', '/Guide/Vue/Vuex/', '/Guide/Vue/Vue_base/']
         },
-          '/Guide/Axios/', '/Guide/Git/', '/Guide/Webpack/']
+          '/Guide/Axios/','/Guide/SSO/', '/Guide/Git/', '/Guide/Webpack/']
       },
     ]
   }
