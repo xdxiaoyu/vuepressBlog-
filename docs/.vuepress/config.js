@@ -4,7 +4,7 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 16:36:00
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-08-20 17:34:25
+ * @LastEditTime: 2020-08-21 09:13:46
  */
 module.exports = {
   title: '小羽',
@@ -67,7 +67,7 @@ module.exports = {
         collapsable: true,
         children: ['/Language/ES6/', '/Language/ES7-10/', {
           title: 'Node',
-          children: ['/Language/Node/Node/', '/Language/Node/MongoDB/']
+          children: ['/Language/Node/Node/', '/Language/Node/MongoDB/', '/Language/Node/Reptiles爬虫/']
         }]
       },
       {
