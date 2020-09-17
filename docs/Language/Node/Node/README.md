@@ -870,7 +870,7 @@ event.emit('林俊杰演唱会')
 fs.readfile('path',读取配置,(err,data) => {})
 fs.writeFile('path',写入数据,写入配置,() => {})
 ```
-测试是码云个github否部署成功
+测试
 
 
 

@@ -4,7 +4,7 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 16:36:00
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-09-17 13:45:54
+ * @LastEditTime: 2020-09-17 14:31:35
  */
 module.exports = {
   title: '小羽',
@@ -22,7 +22,7 @@ module.exports = {
       }
     ]
   ],
-  dest: './docs/.vuepress/dist',
+  dest: 'public',
   // 更新码云时打开
   // base: '/xiaoyu_blog/',
   ga: '',
