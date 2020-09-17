@@ -4,7 +4,7 @@
  # @Author: dxiaoxing
  # @Date: 2020-04-30 16:20:10
  # @LastEditors: dxiaoxing
- # @LastEditTime: 2020-04-30 16:46:05
+ # @LastEditTime: 2020-09-17 12:03:24
  ###
 #!/usr/bin/env sh
 
@@ -15,7 +15,7 @@ set -e
 npm run build
 
 # 进入生成的文件夹
-cd docs/.vuepress/dist
+cd public
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
