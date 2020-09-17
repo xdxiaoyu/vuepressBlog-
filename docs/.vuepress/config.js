@@ -16,7 +16,7 @@ module.exports = {
   ],
   dest: 'public',
   // 更新码云时打开
-  // base: '/xiaoyu_blog/',
+  base: '/xiaoyu_blog/',
   ga: '',
   evergreen: true,
   themeConfig: {
