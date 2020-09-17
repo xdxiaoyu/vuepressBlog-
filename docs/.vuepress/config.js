@@ -1,11 +1,3 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: dxiaoxing
- * @Date: 2020-04-30 16:36:00
- * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-09-17 14:31:35
- */
 module.exports = {
   title: '小羽',
   description: '每割一次都要从割韭菜的人身上换回一点资源',
