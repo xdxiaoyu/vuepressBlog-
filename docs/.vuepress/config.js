@@ -15,7 +15,7 @@ module.exports = {
     ]
   ],
   dest: 'public',
-  // 更新码云时打开
+  // 更新码云时打开，更新github关闭
   base: '/xiaoyu_blog/',
   ga: '',
   evergreen: true,
