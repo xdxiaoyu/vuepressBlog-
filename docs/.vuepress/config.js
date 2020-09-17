@@ -4,7 +4,7 @@
  * @Author: dxiaoxing
  * @Date: 2020-04-30 16:36:00
  * @LastEditors: dxiaoxing
- * @LastEditTime: 2020-08-21 09:13:46
+ * @LastEditTime: 2020-09-17 11:41:56
  */
 module.exports = {
   title: '小羽',
@@ -23,6 +23,7 @@ module.exports = {
     ]
   ],
   dest: './docs/.vuepress/dist',
+  base: '/xiaoyu_blog/',
   ga: '',
   evergreen: true,
   themeConfig: {
