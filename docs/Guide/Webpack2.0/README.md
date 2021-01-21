@@ -1,6 +1,6 @@
 # Webpack
 
-## 1、初识Webpack
+## 一、初识Webpack
 ### webpack安装步骤
 
 初始化项目 `npm init`
@@ -74,7 +74,7 @@ webpack的配置文件作用是什么 ：webpack打包会走默认配置，写�
 
 
 
-## 2、Webpack核心概念
+## 二、Webpack核心概念
 ### loader
 
 webpack不能识别非js结尾的后缀的模块，需要让webpack识别出来其他后缀模块
@@ -429,7 +429,7 @@ import "@babel/polyfill";
 还可以通过`.babelrc`文件将`options`里面的配置项写入进去，避免`options`对象特别长冗余
 
 
-## 3、Webpack进阶
+## 三、Webpack进阶
 ### Tree Shaking
 
 > 你可以将应用程序想象成一棵树。绿色表示实际用到的源码和 library，是树上活的树叶。灰色表示无用的代码，是秋天树上枯萎的树叶。为了除去死去的树叶，你必须摇动这棵树，使它们落下。
@@ -909,7 +909,7 @@ module.exports = {
 ```
 
 
-## 4、Webpack实战配置案例讲解
+## 四、Webpack实战配置案例讲解
 ### library
 
 > 第三方库如何配置被引用
@@ -1248,7 +1248,7 @@ module.exports = {
 
 
 
-## 5、Webpack 底层原理及脚手架工具分析
+## 五、Webpack 底层原理及脚手架工具分析
 
 #### 1、如何编写一个Loader
 
