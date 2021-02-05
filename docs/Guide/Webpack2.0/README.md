@@ -1319,30 +1319,138 @@ module.exports = {
 
 #### 2、如何编写一个Plugin
 
-> 是webpack源码中80%都是基于Plugin机制编写的,可以说Plugin它的灵魂。
+> 是webpack源码中80%都是基于Plugin机制编写的,可以说Plugin它的灵魂。（实例见4-plugin-钩子函数）
+
+
+
+#### 3、Bundler源码编写（模块分析）
+
+`./src/word.js`
+
+```js
+export const word = 'hello'
+```
+
+`./src/message.js`
+
+```js
+import { word } from './word.js'
+const message = `say${word}`
+export default message
+```
+
+`./src/index.js`
+
+```js
+import message from './message.js'
+console.log(message)
+```
+
+`./bundle.js`
+
+```js
+const fs = require('fs')
+const path = require('path')
+const parser = require('@babel/parser')
+const traverse = require('@bable/traverse').default
+const babel = require('@bable/core')
+
+const moduleAnalyser = (filename) => {
+    cosnt content = fs.readFileSync(filename, 'utf-8')
+    /* 打印出来的是抽象语法树（AST）
+    console.log(parser.parse(content, {
+    	sourceType: 'module'
+    }));
+    */
+    const ast = parser.parse(content, {
+        sourceType: 'module'
+    })
+    const dependencise = {};
+    traverse(ast, {
+        ImportDeclaration({ node }) {
+            const dirname = path.dirname(filname)
+            const newFile = path.join(dirname, node.source.value)
+            dependencies[node.source.value] = newFile
+        }
+    })
+    const { code } = bable.transformFromAst(ast, null , {
+        presets: ["@babel/preset-env"] // 插件的集合
+    })
+    
+    return {
+        filename,
+        dependencies,
+        code
+    }
+}
+// 写一个函数分析模块
+// 读取文件内容，把文件内容转换成js对象
+// 采用babel的parser把字符串转换成抽象语法树
+// 分析语法树的引用声明和依赖内容
+// 用键值对存储依赖关系的路径
+// 对模块的源码进行了一次编译(从es-module即es6的语法编译成浏览器能识别的语法)
+// 
+
+cosnt makeDependenciesGraph = (entry) => {
+    const entryModule = moduleAnalyser(entry)
+    const graphArray = [ entryModule ] // 依赖图谱
+    for (let i = 0; i< graphArray.length; i++) {
+        const item = graphArray[i];
+        const { dependencies } = item
+        if(dependencies) {
+           for(let j in dependencies) {
+               graphArray.push(moduleAnalyser(dependencies[j]))
+           }
+         }
+    }
+    
+    const graph = {}
+    graphArray.forEach(item => {
+        graph[item.filename] = {
+            dependencies: item.dependencies,
+            code: item.code
+        }
+    })
+    
+    return graph
+}
+
+const generateCode = (entry) => {
+    // console.log(makeDependenciesGraph(entyr)); 缺少一个require方法和export对象
+    const graph = JSON.stringfy(makeDependenciesGraph(entry))
+    return `
+	  (function(graph){
+		function require(module){
+		   function loaclRequire(relativePath) {
+			  return require(graph[module].dependencies[relativePath]) 
+		   }
+		   var exports = {}
+		   (function(require, exports, code){
+				eval(code)
+			})(localRequire, exports, graph[module].code);
+			return exports
+		};
+		require('${entry}')
+	  })(${graph})
+	`
+}
+
+const code = generateCOde('./src/index.js')
+```
 
 
 
 
 
+## 六、Create-React-App 和 Vue-Cli 3.0脚手架工具配置分析
 
+> VueCli对webpack的做了一些底层的封装，所以即使不会webpack也可以通过阅读VueCli官网快速的完成或更改配置，当然Vue也暴露了一个参数，可以编写原生的webpack配置
 
+```js
+module.exports = {
+    configureWebpack： {
+	}
+}
 
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 6、Create-React-App 和 Vue-Cli 3.0脚手架工具配置分析
