@@ -25,9 +25,10 @@ module.exports = {
       {
         text: 'Language',
         items: [
-          { text: 'ES6', link: '/Language/ES6/' },
-          { text: 'ES7-10', link: '/Language/ES7-10/' },
-          { text: 'Node', link: '/Language/Node/Node/' }
+          // { text: 'ES6', link: '/Language/ES6/' },
+          // { text: 'ES7-10', link: '/Language/ES7-10/' },
+          { text: 'Node', link: '/Language/Node/Node/' },
+          { text: 'JavaScript', link: '/Language/JavaScript/JavaScript/' }
         ]
       },
       {
@@ -60,10 +61,15 @@ module.exports = {
       {
         title: 'Language ',
         collapsable: true,
-        children: ['/Language/ES6/', '/Language/ES7-10/', {
-          title: 'Node',
-          children: ['/Language/Node/Node/', '/Language/Node/MongoDB/', '/Language/Node/Reptiles爬虫/']
-        }]
+        children: [
+          {
+            title: 'Node',
+            children: ['/Language/Node/Node/', '/Language/Node/MongoDB/', '/Language/Node/Reptiles爬虫/']
+          },
+          {
+            title: 'JavaScript',
+            children: ['/Language/JavaScript/JavaScript/', '/Language/JavaScript/ES6/', '/Language/JavaScript/ES7-10/']
+          },]
       },
       {
         title: 'Guide ',
@@ -72,7 +78,7 @@ module.exports = {
           title: 'Vue',
           children: ['/Guide/Vue/Vue_mvvm/', '/Guide/Vue/Vuex/', '/Guide/Vue/Vue_base/']
         },
-          '/Guide/Axios/','/Guide/SSO/', '/Guide/Git/', '/Guide/Webpack/','/Guide/Webpack2.0/']
+          '/Guide/Axios/', '/Guide/SSO/', '/Guide/Git/', '/Guide/Webpack/', '/Guide/Webpack2.0/']
       },
     ]
   }
