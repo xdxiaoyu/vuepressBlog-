@@ -45,7 +45,6 @@ module.exports = {
           { text: 'SSO', link: '/Guide/SSO/' },
           { text: 'Git', link: '/Guide/Git/' },
           { text: 'Webpack', link: '/Guide/Webpack/' },
-          { text: 'Webpack2.0', link: '/Guide/Webpack2.0/' },
         ]
       },
       {
@@ -78,7 +77,7 @@ module.exports = {
           title: 'Vue',
           children: ['/Guide/Vue/Vue_mvvm/', '/Guide/Vue/Vuex/', '/Guide/Vue/Vue_base/']
         },
-          '/Guide/Axios/', '/Guide/SSO/', '/Guide/Git/', '/Guide/Webpack/', '/Guide/Webpack2.0/']
+          '/Guide/Axios/', '/Guide/SSO/', '/Guide/Git/', '/Guide/Webpack/']
       },
     ]
   }
