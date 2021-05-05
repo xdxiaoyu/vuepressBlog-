@@ -809,4 +809,3 @@ console.log(result) // 26
 
 
 #### 5.3 布尔操作符
-sc
