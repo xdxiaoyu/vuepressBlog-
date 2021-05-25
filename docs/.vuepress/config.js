@@ -1,6 +1,6 @@
 module.exports = {
   title: '小羽',
-  description: '此心光明，亦复何言',
+  description: '休言女子非英物，夜夜龙泉壁上鸣',
   head: [
     ['link', {
       rel: 'icon',

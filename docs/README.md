@@ -1,15 +1,15 @@
 ---
 home: true
-heroImage: /bg.jpg
-actionText: 开始学习 →
+heroImage: /bg1.png
+actionText: Go →
 actionLink: /Guide/Vue/Vue_mvvm/
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-  - title: Vue驱动
-    details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-  - title: 高性能
-    details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+  - title: ⊙﹏⊙
+    details: 在我的电脑上明明可以，你清理下缓存。
+  - title: ˇ▽ˇ 
+    details: 时光荏苒，岁月如梭。每一个框架或者库只能陪你走一段路，最终都会逝去。留在你心中的，不是一条一条的语法规则，而是一个一个的思想，这些思想才是推动进步的源泉。
+  - title: ˇ▽ˇ
+    details: 事勿忙，忙多错。勿畏难，勿轻略。
 footer: MIT Licensed | Copyright © 2020 xiaoyu
 ---
 
