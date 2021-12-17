@@ -1,6 +1,6 @@
 module.exports = {
   title: '小羽',
-  description: '休言女子非英物，夜夜龙泉壁上鸣',
+  description: '婷婷袅袅十三余，豆蔻梢头二月初',
   head: [
     ['link', {
       rel: 'icon',
@@ -32,19 +32,19 @@ module.exports = {
         ]
       },
       {
-        text: 'Guide',
+        text: 'Tool',
         items: [
           {
-            text: 'Vue', link: '/Guide/Vue/Vue_mvvm/'
+            text: 'Vue', link: '/Tool/Vue/Vue_mvvm/'
             // items: [
-            //   { text: 'Vue_mvvm', link: '/Guide/Vue/Vue_mvvm/' },
-            //   { text: 'Vuex', link: '/Guide/Vue/Vuex/' },
+            //   { text: 'Vue_mvvm', link: '/Tool/Vue/Vue_mvvm/' },
+            //   { text: 'Vuex', link: '/Tool/Vue/Vuex/' },
             // ]
           },
-          { text: 'Axios', link: '/Guide/Axios/' },
-          { text: 'SSO', link: '/Guide/SSO/' },
-          { text: 'Git', link: '/Guide/Git/' },
-          { text: 'Webpack', link: '/Guide/Webpack/' },
+          { text: 'Axios', link: '/Tool/Axios/' },
+          { text: 'SSO', link: '/Tool/SSO/' },
+          { text: 'Git', link: '/Tool/Git/' },
+          { text: 'Webpack', link: '/Tool/Webpack/' },
         ]
       },
       {
@@ -71,13 +71,13 @@ module.exports = {
           },]
       },
       {
-        title: 'Guide ',
+        title: 'Tool ',
         collapsable: true,
         children: [{
           title: 'Vue',
-          children: ['/Guide/Vue/Vue_mvvm/', '/Guide/Vue/Vuex/', '/Guide/Vue/Vue_base/']
+          children: ['/Tool/Vue/Vue_mvvm/', '/Tool/Vue/Vuex/', '/Tool/Vue/Vue_base/']
         },
-          '/Guide/Axios/', '/Guide/SSO/', '/Guide/Git/', '/Guide/Webpack/']
+          '/Tool/Axios/', '/Tool/SSO/', '/Tool/Git/', '/Tool/Webpack/']
       },
     ]
   }
