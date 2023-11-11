@@ -1,6 +1,6 @@
 module.exports = {
   title: '小羽',
-  description: '婷婷袅袅十三余，豆蔻梢头二月初',
+  description: '沉海底也要望月，跌谷底也要开花',
   head: [
     ['link', {
       rel: 'icon',
